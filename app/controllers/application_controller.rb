@@ -14,20 +14,7 @@ require_relative '/home/leila/development/code/phase-3/phase-3-sinatra-react-pro
 require_relative '/home/leila/development/code/phase-3/phase-3-sinatra-react-project/app/controllers/categories_controller.rb'
 require_relative '/home/leila/development/code/phase-3/phase-3-sinatra-react-project/app/controllers/invoices_controller.rb'
 
-# Configure database connection
-# Set your database configuration based on your database setup
-# Example: ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'your_database.db')
 
-# Your application settings and configuration can go here
-
-# Optionally, you can add some helpers or middlewares here
-
-# Optionally, you can also set a layout or other settings here
-
-# Run the application
-# Only if running the app directly (not when running tests)
-# run! if __FILE__ == $0
-  # GET route to fetch all appointments
   # GET route to fetch all patients
   get "/patients" do
     patients = Patient.all

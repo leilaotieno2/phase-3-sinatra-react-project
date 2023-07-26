@@ -31,7 +31,6 @@ class InvoicesController < Sinatra::Base
       )
       invoice.to_json
     end
-  
     # DELETE route to delete an invoice
     delete "/invoices/:id" do
       invoice = Invoice.find(params[:id])

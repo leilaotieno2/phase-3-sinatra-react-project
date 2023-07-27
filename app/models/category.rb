@@ -1,8 +1,11 @@
 # models/category.rb
 class Category < ActiveRecord::Base
-    has_many :patients
-  
-    # Attributes: name, description, priority level (e.g., emergency, urgent, routine), etc.
-    # Add validations if required.
-  end
-  
+  has_many :patients
+
+
+
+  # Validations
+  validates :name, presence: true, uniqueness: true, length: { maximum: 100 }
+  validates :description, presence: true, length: { maximum: 500 }
+
+end

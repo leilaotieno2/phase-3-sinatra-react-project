@@ -16,6 +16,10 @@ class PatientsController < Sinatra::Base
         age: params[:age],
         gender: params[:gender],
         # Add other attributes for the Patient model here
+        contact_info: params[:contact_info],
+    medical_history: params[:medical_history],
+    insurance_details: params[:insurance_details],
+    category_id: params[:category_id],
       )
       patient.to_json
     end

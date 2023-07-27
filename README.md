@@ -1,4 +1,4 @@
-link to my backend https://github.com/leilaotieno2/phase-3-sinatra-react-project
+limk to my front end https://github.com/leilaotieno2/aa-frontend
 
 # The A.A Family Hospitals Management System
 
